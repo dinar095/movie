@@ -1,6 +1,7 @@
 {%  extends 'movies/base.html' %}
-
-{% block content %}
+{% block title %} {% endblock title %}
+{% block header %} {% endblock header %}
+{% block movie %}
     <div class="left-ads-display col-lg-9">
         <div class="row">
             {% for movie in movie_list %}
@@ -32,4 +33,4 @@
             {% endfor %}
         </div>
     </div>
-{% endblock content %}
+{% endblock movie %}
